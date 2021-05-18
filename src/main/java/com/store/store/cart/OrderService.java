@@ -15,7 +15,6 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
     private final ProductRepository productRepository;
-    private static HashMap<String, Integer> priceByUserName = new HashMap<>();
 
     public OrderService(OrderRepository orderRepository, ProductRepository productRepository,
                         ProductRepository productRepository1) {
