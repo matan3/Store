@@ -8,27 +8,18 @@ public class User {
 
     @Id
     @SequenceGenerator(
-            name = "product_sequence",
-            sequenceName = "product_sequence",
+            name = "user_sequence",
+            sequenceName = "user_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "product_sequence"
+            generator = "user_sequence"
     )
     private Long id;
     private String userName;
     private String password;
-    //private String roles;
     private Boolean isOwner;
-
-//    public String getRoles() {
-//        return roles;
-//    }
-//
-//    public void setRoles(String roles) {
-//        this.roles = roles;
-//    }
 
     public Long getId() {
         return id;
